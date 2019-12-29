@@ -2,7 +2,13 @@
 
 ### react-native-ico-technology-logos
 
-50 Icons
+369 Vector Icons for React Native
+
+<img src="./static/t-mobile.png" alt="t-mobile" width="150" height="150"> <img src="./static/oppo.png" alt="oppo" width="150" height="150"> <img src="./static/asus.png" alt="asus" width="150" height="150">
+
+## List of icons
+
+- [List of Technology Logos Icons](http://ico.simpleness.org/pack/technology-logos)
 
 ## Usage
 
@@ -22,10 +28,6 @@ render() {
 }
 
 ```
-
-## List of icons
-
-- [List of Technology Logos Icons](http://ico.simpleness.org/pack/technology-logos)
 
 ## Installation
 
@@ -61,7 +63,7 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of file | "t-mobile"
+name | no |  | name of icon | "t-mobile"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40

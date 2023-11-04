@@ -53,7 +53,36 @@ declare module 'react-native-ico-technology-logos' {
       'sap' |
       'intel';
 
+    type iconColors = '#004F9C' |
+      '#0964AF' |
+      '#4987CE' |
+      '#579ADD' |
+      '#646566' |
+      '#66AF3F' |
+      '#72BE4F' |
+      '#777777' |
+      '#B0B0B5' |
+      '#BDDBF4' |
+      '#C2C2C4' |
+      '#D6D6D8' |
+      '#D84848' |
+      '#D9ECF9' |
+      '#E54E8C' |
+      '#E85454' |
+      '#EA6D11' |
+      '#EA9D13' |
+      '#EDCF8E' |
+      '#F21938' |
+      '#F2F2F2' |
+      '#F46095' |
+      '#F97E19' |
+      '#FCAF17' |
+      '#FFE7AB' |
+      '#FFFFFF';
+
     type backgroundType = 'circle' | 'rect' | 'button';
+
+    type colorsType = Record<iconColors, string>;
 
     type positionType = 'top' | 'bottom' | 'right' | 'left' |
       'top_right' | 'top_left' | 'bottom_right' | 'bottom_left';
@@ -70,6 +99,7 @@ declare module 'react-native-ico-technology-logos' {
       fontSize?: string;
       position?: positionType;
       color?: string;
+      colors: colorsType;
       backgroundColor?: string;
       radius?: number;
     };
@@ -79,6 +109,7 @@ declare module 'react-native-ico-technology-logos' {
       width?: number;
       height?: number;
       color?: string;
+      colors: colorsType;
       stroke?: number;
       background?: backgroundType | backgroundTypeObj;
       badge?: number | string | badgeTypeObj;

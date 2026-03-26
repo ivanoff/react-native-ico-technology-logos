@@ -1,57 +1,63 @@
 declare module 'react-native-ico-technology-logos' {
     import { ReactNode } from 'react';
-    import { SvgProps, AdditionalProps } from 'react-native-svg';
+    import { SvgProps } from 'react-native-svg';
 
-    type iconNames = 'hp' |
-      'acer' |
-      'samsung' |
-      't-mobile' |
-      'oppo' |
-      'asus' |
-      'one-plus' |
-      'gopro' |
-      'casio' |
-      'nokia' |
-      'zeiss' |
-      'huawei' |
-      'nikon' |
-      'beats' |
-      'jvc' |
-      'gigabyte' |
-      'seagate' |
-      'logitech' |
-      'nvidia' |
-      'cisco' |
-      'leica' |
-      'brother' |
-      'ibm' |
-      'dell' |
-      'htc' |
-      'att' |
-      'compaq' |
-      'lg' |
-      'sandisk' |
-      'xiaomi' |
-      'canon' |
-      'xerox' |
-      'lenovo' |
-      'zte' |
-      'vaio' |
-      'sharp' |
-      'sony' |
-      'packard-bell' |
-      'vivo' |
-      'android' |
-      'amd' |
-      'hitachi' |
+    type AdditionalProps = {
+      onError?: (error: Error) => void;
+      onLoad?: () => void;
+      fallback?: ReactNode;
+    };
+
+    type iconNames = 'zeiss' |
       'motorola' |
-      'epson' |
-      'verizon' |
-      'apple' |
-      'philips' |
-      'windows' |
+      't-mobile' |
+      'gigabyte' |
+      'ibm' |
+      'htc' |
+      'logitech' |
       'sap' |
-      'intel';
+      'intel' |
+      'casio' |
+      'cisco' |
+      'nikon' |
+      'vaio' |
+      'asus' |
+      'jvc' |
+      'oppo' |
+      'compaq' |
+      'android' |
+      'zte' |
+      'verizon' |
+      'brother' |
+      'philips' |
+      'lenovo' |
+      'xerox' |
+      'hitachi' |
+      'beats' |
+      'epson' |
+      'nokia' |
+      'att' |
+      'huawei' |
+      'xiaomi' |
+      'leica' |
+      'samsung' |
+      'lg' |
+      'sony' |
+      'nvidia' |
+      'sandisk' |
+      'canon' |
+      'vivo' |
+      'acer' |
+      'packard-bell' |
+      'sharp' |
+      'hp' |
+      'apple' |
+      'gopro' |
+      'amd' |
+      'dell' |
+      'seagate' |
+      'windows' |
+      'one-plus';
 
     type iconColors = '#004F9C' |
       '#0964AF' |
@@ -109,7 +115,7 @@ declare module 'react-native-ico-technology-logos' {
       width?: number;
       height?: number;
       color?: string;
-      colors: colorsType;
+      colors?: colorsType;
       stroke?: number;
       background?: backgroundType | backgroundTypeObj;
       badge?: number | string | badgeTypeObj;
